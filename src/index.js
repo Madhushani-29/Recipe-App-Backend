@@ -17,7 +17,7 @@ const app=express();
 app.use(express.json());
 
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://recipe-app-frontend-makxjkiwi-madhushanis-projects.vercel.app");
+  res.header("Access-Control-Allow-Origin", "https://recipe-app-frontend-plum.vercel.app");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
