@@ -16,8 +16,8 @@ app.use(express.json());
 
 app.use(cors());
 
-app.get("/", async (req, res) => {
-    res.status(200).json({ message: "Server running correctly!" });
+app.get("/health", async (req, res) => {
+    res.status(200).json({ message: "Health !" });
   });
 
   
