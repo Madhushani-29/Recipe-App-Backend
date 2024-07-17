@@ -16,11 +16,7 @@ const app=express();
 //to parse the json data from 
 app.use(express.json());
 
-app.use(cors({
-  origin: 'http://localhost:3000',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'X-CSRF-Token', 'X-Requested-With', 'Accept', 'Accept-Version', 'Content-Length', 'Content-MD5', 'Date', 'X-Api-Version', 'Authorization']
-}));
+app.use(cors({}));
 
 app.get('/', (req, res) => {
   res.send('Hello World')
