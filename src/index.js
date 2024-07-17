@@ -1,10 +1,10 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import {connectDB} from "./src/Connection.js";
-import {errorHandler} from "./src/Middleware/ErrorHandler.js";
-import {userRouter} from "./src/Router/UserRoutes.js";
-import {recipeRouter} from "./src/Router/RecipeRoutes.js";
+import {connectDB} from "./Connection.js";
+import {errorHandler} from "./Middleware/ErrorHandler.js";
+import {userRouter} from "./Router/UserRoutes.js";
+import {recipeRouter} from "./Router/RecipeRoutes.js";
 
 dotenv.config();
 const port=process.env.PORT || 3001;
