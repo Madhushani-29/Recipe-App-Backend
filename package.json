@@ -16,10 +16,10 @@
   },
   "name": "recipe-app-backend",
   "version": "1.0.0",
-  "main": "src/index.cjs",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node src/index.cjs",
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
