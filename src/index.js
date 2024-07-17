@@ -9,8 +9,10 @@ import {recipeRouter} from "./Router/RecipeRoutes.js";
 dotenv.config();
 const port=process.env.PORT || 3001;
 
-//connectDB();
+connectDB();
+
 const app=express();
+
 //to parse the json data from 
 app.use(express.json());
 
@@ -24,10 +26,9 @@ app.get("/health", async (req, res) => {
     res.status(200).json({ message: "Health !" });
   });
 
-//app.use("/users", userRouter);
-//app.use("/recipe", recipeRouter);
-//app.use(errorHandler);
-
+app.use("/users", userRouter);
+app.use("/recipe", recipeRouter);
+app.use(errorHandler);
 
 app.listen(port, ()=>{
     console.log(`Server running on port ${port}`);
